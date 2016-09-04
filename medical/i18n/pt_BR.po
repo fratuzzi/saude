@@ -1,0 +1,2398 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* medical
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-02 14:30-0300\n"
+"PO-Revision-Date: 2016-09-02 16:59-0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
+
+#. module: medical
+#: model:mail.template,body_html:medical.email_template_appointment_confirmation
+msgid ""
+"\n"
+"                <div class=\"content-wrapper\" style=\"max-width:650px;\">\n"
+"                    <div class=\"col-sm-12 highlight\">\n"
+"                        <p> <b>Dear ${object.patient_id.name}</b> </p>\n"
+"                        <p>The following appointment has been created "
+"successfully</p>\n"
+"                        <div class=\"row\"></div>\n"
+"\n"
+"                        <div class=\"col-sm-8 highlight\">\n"
+"                            <p>Doctor....: <b>${object.physician_id.name}</"
+"b></p>\n"
+"                            <p>Date.....: <b>${ctx.get('appointment_date') "
+"or object.appointment_date[:10]}</b><img class=\"img-responsive\" style="
+"\"float:right;\" src=\"http://agendese.com/website/static/src/img/Agendese/"
+"Banners/calendar.png\"></p>\n"
+"                            <p>Time......: <b>${ctx.get('appointment_time') "
+"or object.appointment_date[11:]}</b></p>\n"
+"                            <p>Clinic...: <b>${object.institution_id.name}</"
+"b></p>\n"
+"                            <p>Phone..: <b>${object.institution_id.phone}</"
+"b></p>\n"
+"                            <p>Address.: <b>${object.institution_id.street} "
+"${object.institution_id.street2}</b></p>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: medical
+#: model:mail.template,body_html:medical.sms_template_appointment_confirmation
+msgid ""
+"\n"
+"<p>Your appointment with Dr. ${object.physician_id.lastname} on ${ctx."
+"get('appointment_date') or object.appointment_date[:10]} ${ctx."
+"get('appointment_time') or object.appointment_date[11:]} has been confirmed."
+"</p>\n"
+"            "
+msgstr ""
+
+#. module: medical
+#: code:addons/medical/models/medical_patient.py:47
+#, python-format
+msgid " (deceased)"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_appointment
+msgid " Appointment"
+msgstr "Consulta"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_specialty
+msgid " Medical Specialty"
+msgstr "Especialidade"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_patient
+msgid " Patient"
+msgstr "Paciente"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_physician_admin
+msgid " Physician [Admin]"
+msgstr "Médico [Admin]"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_physician_assistant
+msgid " Physician [Asistant]"
+msgstr "Médico [Assistente]"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_physician_self
+msgid " Physician [Self]"
+msgstr "Médico [Auto]"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_product_variant_count
+msgid "# of Product Variants"
+msgstr "# de Variantes do Produto"
+
+#. module: medical
+#: model:mail.template,subject:medical.sms_template_appointment_confirmation
+msgid "${object.institution_id.name}  -  Confirmación de Cita"
+msgstr ""
+
+#. module: medical
+#: model:mail.template,subject:medical.email_template_appointment_confirmation
+msgid ""
+"${object.institution_id.name} <${(object.institution_id.email or user.email)|"
+"safe}> - Appointment Confirmation"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_hour:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "00"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "01"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "02"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "03"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "04"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_hour:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "05"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "06"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "07"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "08"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "09"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_hour:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "10"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "11"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "12"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "13"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "14"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_hour:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "15"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "16"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "17"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "18"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "19"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_hour:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "20"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "21"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "22"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,end_hour:0
+#: selection:medical.physician.schedule.template,start_hour:0
+msgid "23"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "25"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "30"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "35"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "40"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "45"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "50"
+msgstr ""
+
+#. module: medical
+#: selection:medical.physician.schedule.template,duration:0
+#: selection:medical.physician.schedule.template,end_minute:0
+#: selection:medical.physician.schedule.template,start_minute:0
+#: selection:medical.physician.services,service_duration:0
+msgid "55"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_kanban
+msgid "<b>Age:</b>"
+msgstr "<b>Idade:</b>"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_kanban
+msgid "<b>Duration:</b>"
+msgstr "<b>Duração:</b>"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_kanban
+msgid "<b>Patient:</b>"
+msgstr "<b>Paciente:</b>"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_kanban
+msgid "<b>Physician:</b>"
+msgstr "<b>Médico:</b>"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_kanban
+msgid "<b>SSN:</b>"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_kanban
+msgid "<b>Sex:</b>"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_type
+msgid ""
+"A consumable is a product for which you don't manage stock, a service is a "
+"non-material product provided by a company or an individual."
+msgstr ""
+"Um material de consumo é um produto do qual você não gerenciar estoque, um "
+"serviço é um produto não-material fornecido por uma empresa ou um indivíduo."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_description_sale
+msgid ""
+"A description of the Product that you want to communicate to your customers. "
+"This description will be copied to every Sale Order, Delivery Order and "
+"Customer Invoice/Refund"
+msgstr ""
+"A descrição do produto que você quer se comunicar com seus clientes. Esta "
+"descrição será copiado para cada venda de pedido, ordem de entrega e factura "
+"de cliente / reembolso"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_description_purchase
+msgid ""
+"A description of the Product that you want to communicate to your vendors. "
+"This description will be copied to every Purchase Order, Receipt and Vendor "
+"Bill/Refund."
+msgstr ""
+"A descrição do produto que você deseja comunicar aos seus fornecedores. Esta "
+"descrição será copiado para cada ordem de compra, recebimento e Vendor "
+"Bill / reembolso."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_description
+msgid ""
+"A precise description of the Product, used only for internal information "
+"purposes."
+msgstr ""
+"Uma descrição precisa do produto, usado somente para fins de informação "
+"interna."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_action
+msgid "Action"
+msgstr "Ação"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_needaction
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_needaction
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_needaction
+msgid "Action Needed"
+msgstr "Ação Necessária"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_activation_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_activation_date
+#: model:ir.model.fields,field_description:medical.field_res_partner_activation_date
+msgid "Activation date"
+msgstr "Data da Ativação"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_active
+#: model:ir.model.fields,field_description:medical.field_medical_physician_active
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Address"
+msgstr "Endereço"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_type
+#: model:ir.model.fields,field_description:medical.field_medical_physician_type
+msgid "Address Type"
+msgstr "Tipo de Endereço"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_age
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_search
+msgid "Age"
+msgstr "Idade"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_alias
+#: model:ir.model.fields,field_description:medical.field_medical_patient_alias
+#: model:ir.model.fields,field_description:medical.field_medical_physician_alias
+#: model:ir.model.fields,field_description:medical.field_res_partner_alias
+msgid "Alias"
+msgstr "Apelido"
+
+#. module: medical
+#: selection:medical.appointment,appointment_type:0
+msgid "Ambulatory"
+msgstr "Ambulatório"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_appointment_action
+#: model:ir.ui.menu,name:medical.medical_appointment_root
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_form
+msgid "Appointment"
+msgstr "Consulta"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_name
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Appointment ID"
+msgstr "ID da Consulta"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician_unavailable_wizard
+msgid "Asistente para la definicion de indisponibilidades"
+msgstr "Assistente para Definição de indisponibilidade"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_attribute_value_ids
+msgid "Attributes"
+msgstr "Atributos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_bank_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_bank_ids
+msgid "Banks"
+msgstr "Bancos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_barcode
+#: model:ir.model.fields,field_description:medical.field_medical_physician_barcode
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_barcode
+msgid "Barcode"
+msgstr "Código de Barras"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_list_price
+msgid ""
+"Base price to compute the customer price. Sometimes called the catalog price."
+msgstr ""
+"Preço base para calcular o preço ao consumidor. Às vezes chamado o preço de "
+"catálogo."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_image
+msgid "Big-sized image"
+msgstr "Imagem Grande"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_birthdate
+#: model:ir.model.fields,field_description:medical.field_medical_physician_birthdate
+msgid "Birthdate"
+msgstr "Aniversário"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_physician_unavailable_wizard_act
+msgid "Block Off Schedule"
+msgstr "Bloquear fora da programação"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_calendar
+msgid "Calendar View"
+msgstr "Visão de Calendário"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_rental
+msgid "Can be Rent"
+msgstr "Pode ser Alugado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_sale_ok
+msgid "Can be Sold"
+msgstr "Pode ser Vendido"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_canceled
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_channel_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_channel_ids
+msgid "Channels"
+msgstr "Canáis"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_company
+#: model:ir.model.fields,help:medical.field_medical_physician_is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Verifique se o contato é uma empresa, caso contrário, é uma pessoa"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_institution
+#: model:ir.model.fields,help:medical.field_medical_physician_is_institution
+#: model:ir.model.fields,help:medical.field_res_partner_is_institution
+msgid "Check if the party is a Medical Center"
+msgstr "Verifique se o partido é um Centro Médico"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_pharmacy
+#: model:ir.model.fields,help:medical.field_medical_physician_is_pharmacy
+#: model:ir.model.fields,help:medical.field_res_partner_is_pharmacy
+msgid "Check if the party is a Pharmacy"
+msgstr "Verifique se o partido é uma Farmácia"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_doctor
+#: model:ir.model.fields,help:medical.field_medical_physician_is_doctor
+#: model:ir.model.fields,help:medical.field_res_partner_is_doctor
+msgid "Check if the party is a health professional"
+msgstr "Verifique se o partido é um profissional de saúde"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_insurance_company
+#: model:ir.model.fields,help:medical.field_medical_patient_is_patient
+#: model:ir.model.fields,help:medical.field_medical_physician_is_insurance_company
+#: model:ir.model.fields,help:medical.field_medical_physician_is_patient
+#: model:ir.model.fields,help:medical.field_res_partner_is_insurance_company
+#: model:ir.model.fields,help:medical.field_res_partner_is_patient
+msgid "Check if the party is a patient"
+msgstr "Verifique se o partido é um paciente"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_is_person
+#: model:ir.model.fields,help:medical.field_medical_physician_is_person
+#: model:ir.model.fields,help:medical.field_res_partner_is_person
+msgid "Check if the party is a person."
+msgstr "Verifique se o partido é uma pessoa."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_is_medical_supply
+#: model:ir.model.fields,help:medical.field_product_product_is_medical_supply
+msgid "Check if the product is a medical supply"
+msgstr "Verifique se o produto é uma fonte médica"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_is_vaccine
+#: model:ir.model.fields,help:medical.field_product_product_is_vaccine
+msgid "Check if the product is a vaccine"
+msgstr "Verificar se o produto é uma vacina"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_is_insurance_plan
+#: model:ir.model.fields,help:medical.field_product_product_is_insurance_plan
+msgid "Check if the product is an insurance plan"
+msgstr "Verifique se o produto é um plano de saúde"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_customer
+#: model:ir.model.fields,help:medical.field_medical_physician_customer
+msgid "Check this box if this contact is a customer."
+msgstr "Marque esta caixa se este contato é um cliente."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_supplier
+#: model:ir.model.fields,help:medical.field_medical_physician_supplier
+msgid ""
+"Check this box if this contact is a vendor. If it's not checked, purchase "
+"people will not see it when encoding a purchase order."
+msgstr ""
+"Marque esta caixa se este contato é um fornecedor. Se ele não está marcada, "
+"compra as pessoas não vão vê-lo quando se codifica uma ordem de compra."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_employee
+#: model:ir.model.fields,help:medical.field_medical_physician_employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Marque esta caixa se este contato é um funcionário."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_city
+#: model:ir.model.fields,field_description:medical.field_medical_physician_city
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "City"
+msgstr "Cidade"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_code
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_search
+msgid "Code"
+msgstr "Código"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_color
+#: model:ir.model.fields,field_description:medical.field_medical_physician_color
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_color
+msgid "Color Index"
+msgstr "Cor do Índice"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_comments
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Comments"
+msgstr "Comentários"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_commercial_partner_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entidade Comercial"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_alias
+#: model:ir.model.fields,help:medical.field_medical_physician_alias
+#: model:ir.model.fields,help:medical.field_res_partner_alias
+msgid "Common name that the Party is reffered"
+msgstr "Nome comum de que o Partido é referido"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_company_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_company_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_company_id
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Company"
+msgstr "Companhia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_company_type
+#: model:ir.model.fields,field_description:medical.field_medical_physician_company_type
+msgid "Company Type"
+msgstr "Tipo de Companhia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_contact_address
+#: model:ir.model.fields,field_description:medical.field_medical_physician_contact_address
+msgid "Complete Address"
+msgstr "Endereço Completo"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_root_sub
+msgid "Configuration"
+msgstr "Configuração"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_confirm
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_consultations
+#: model:ir.model.fields,help:medical.field_medical_appointment_consultations
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Consultation Services"
+msgstr "Serviço de Consulta"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_relative_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_relative_id
+#: model:ir.model.fields,field_description:medical.field_res_partner_relative_id
+msgid "Contact"
+msgstr "Contato"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Contact Information"
+msgstr "Informação do Contato"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_child_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_child_ids
+msgid "Contacts"
+msgstr "Contatos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_standard_price
+msgid "Cost"
+msgstr "Custo"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_standard_price
+msgid ""
+"Cost of the product template used for standard stock valuation in accounting "
+"and used as a base price on purchase orders. Expressed in the default unit "
+"of measure of the product."
+msgstr ""
+"Custo do modelo do produto usado para avaliação de estoque padrão em "
+"contabilidade e usado como um preço base em ordens de compra. Expressa na "
+"unidade de medida padrão do produto."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_country_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_country_id
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Country"
+msgstr "País"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_patient_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_create_uid
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_patient_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_create_date
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_credit_limit
+#: model:ir.model.fields,field_description:medical.field_medical_physician_credit_limit
+msgid "Credit Limit"
+msgstr "Limite de Crédito"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_partner_ref
+msgid "Customer ref"
+msgstr "Ref Cliente"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_date
+msgid "Date"
+msgstr "Data"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_appointment_date
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_date
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Date and Time"
+msgstr "Data e Hora"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_dob
+msgid "Date of Birth"
+msgstr "Data de Aniversário"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_activation_date
+#: model:ir.model.fields,help:medical.field_medical_physician_activation_date
+#: model:ir.model.fields,help:medical.field_res_partner_activation_date
+msgid "Date of activation of the party"
+msgstr "Data de activação do partido"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_message_last_post
+#: model:ir.model.fields,help:medical.field_medical_physician_message_last_post
+#: model:ir.model.fields,help:medical.field_medical_physician_services_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr "Data da última mensagem postada no álbum."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_day
+msgid "Day"
+msgstr "Dia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_deceased
+msgid "Deceased"
+msgstr "Falecido"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_dod
+msgid "Deceased Date"
+msgstr "Data de Falecimento"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "Unidade de medida padrão utilizada para todas as operações de estoque."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_uom_po_id
+msgid ""
+"Default Unit of Measure used for purchase orders. It must be in the same "
+"category than the default unit of measure."
+msgstr ""
+"Unidade de medida padrão utilizado para pedidos de compra. Deve ser na mesma "
+"categoria que a unidade de medida padrão."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_is_default
+msgid "Default?"
+msgstr "Padrão?"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Dependant"
+msgstr "Dependente"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Dependant Name"
+msgstr "Nome do Dependente"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Dependants"
+msgstr "Dependentes"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_patient_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_display_name
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Divorced"
+msgstr "Divorciado"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_search
+msgid "DoB"
+msgstr ""
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_done
+msgid "Done"
+msgstr "Feito"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_new
+msgid "Draft"
+msgstr "Rascunho"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_duration
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_duration
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_service_duration
+msgid "Duration"
+msgstr "Duração"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_email
+#: model:ir.model.fields,field_description:medical.field_medical_physician_email
+msgid "Email"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_notify_email
+#: model:ir.model.fields,field_description:medical.field_medical_physician_notify_email
+msgid "Email Messages and Notifications"
+msgstr "Mensagens de email e Notificações"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_employee
+#: model:ir.model.fields,field_description:medical.field_medical_physician_employee
+msgid "Employee"
+msgstr "Empregado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_date_end
+msgid "End"
+msgstr "Fim"
+
+#. module: medical
+#: code:addons/medical/models/medical_appointment.py:190
+#, python-format
+msgid "Error!"
+msgstr "Erro!"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_info
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+msgid "Extra info"
+msgstr "Informação Extra"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_fax
+#: model:ir.model.fields,field_description:medical.field_medical_physician_fax
+msgid "Fax"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Fax:"
+msgstr ""
+
+#. module: medical
+#: selection:medical.patient,gender:0
+msgid "Female"
+msgstr "Mulher"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "First Name Last Name"
+msgstr "Nome Completo"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_fold
+msgid "Folded in Kanban View"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_follower_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_follower_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_channel_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_channel_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (Canais)"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_partner_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_partner_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Parceiros)"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Friday"
+msgstr "Sexta-feira"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_gender
+msgid "Gender"
+msgstr "Gênero"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_general_info
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "General Information"
+msgstr "Informação Geral"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_packaging_ids
+msgid ""
+"Gives the different ways to package the same product. This has no impact on "
+"the picking order and is mainly used if you use the EDI module."
+msgstr ""
+"Dá as diferentes maneiras de empacotar o mesmo produto. Isso não tem impacto "
+"sobre a ordem de picking e é usado principalmente se você usar o módulo EDI."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_sequence
+msgid "Gives the sequence order when displaying a product list"
+msgstr "Dá a ordem de sequência ao exibir uma lista de produtos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_weight
+msgid "Gross Weight"
+msgstr "Peso bruto"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_search
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_search
+msgid "Group By..."
+msgstr "Agrupar Por..."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_institution_id
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Health Center"
+msgstr "Centro de Saúde"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_doctor
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_doctor
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_doctor
+msgid "Health Prof"
+msgstr "Prof da Saúde"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_conf_physicians
+msgid "Health Professionals"
+msgstr "Profissional da Saúde"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_appointment_id_history
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_form
+msgid "History"
+msgstr "História"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_ids
+msgid "History lines"
+msgstr "História Linhas"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_end_hour
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_start_hour
+msgid "Hour"
+msgstr "Hora"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "I don't want to receive comercial messages"
+msgstr "Não deseja receber mensagens comerciais"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_id
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_id
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_id
+#: model:ir.model.fields,field_description:medical.field_medical_patient_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_code
+#: model:ir.model.fields,field_description:medical.field_medical_physician_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_id
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_id
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+msgid "ID"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_ref
+#: model:ir.model.fields,field_description:medical.field_medical_physician_ref
+msgid "ID/SSN"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_im_status
+#: model:ir.model.fields,field_description:medical.field_medical_physician_im_status
+msgid "IM Status"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_message_unread
+#: model:ir.model.fields,help:medical.field_medical_physician_message_unread
+#: model:ir.model.fields,help:medical.field_medical_physician_services_message_unread
+msgid "If checked new messages require your attention."
+msgstr "Se verificar novas mensagens requerem sua atenção."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_message_needaction
+#: model:ir.model.fields,help:medical.field_medical_physician_message_needaction
+#: model:ir.model.fields,help:medical.field_medical_physician_services_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se cheque, novas mensagens requerem sua atenção."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_stage_is_default
+msgid "If checked, this stage will be selected when creating new appointments."
+msgstr "Se marcada, esta etapa será selecionado ao criar novos compromissos."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_opt_out
+#: model:ir.model.fields,help:medical.field_medical_physician_opt_out
+msgid ""
+"If opt-out is checked, this contact has refused to receive emails for mass "
+"mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
+"users to filter the partners when performing mass mailing."
+msgstr ""
+"Se opt-out é verificada, este contato se recusou a receber e-mails para "
+"envio em massa e campanha de marketing. Filtro 'Disponível para envio de "
+"massa' permite ao usuário filtrar os parceiros na realização envio em massa."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_lang
+#: model:ir.model.fields,help:medical.field_medical_physician_lang
+msgid ""
+"If the selected language is loaded in the system, all documents related to "
+"this contact will be printed in this language. If not, it will be English."
+msgstr ""
+"Se o idioma selecionado é carregado no sistema, todos os documentos "
+"relacionados a esse contato serão impressos nesta língua. Se não, ele será o "
+"Inglês."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_active
+msgid ""
+"If unchecked, it will allow you to hide the physician without removing it."
+msgstr ""
+"Se desabilitado, não permitirá que você esconda o médico sem removê-lo."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_active
+msgid ""
+"If unchecked, it will allow you to hide the product without removing it."
+msgstr ""
+"Se desabilitado, não permitirá que você esconda o produto sem removê-lo."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_image
+#: model:ir.model.fields,field_description:medical.field_medical_physician_image
+msgid "Image"
+msgstr "Imagem"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_image
+msgid ""
+"Image of the product variant (Big-sized image of product template if false). "
+"It is automatically resized as a 1024x1024px image, with aspect ratio "
+"preserved."
+msgstr ""
+"Imagem da variante do produto (imagem grande em tamanho real do modelo do "
+"produto se falso). Ele é automaticamente redimensionada como uma imagem de "
+"1024x1024px, com relação de aspecto preservado."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_image_medium
+msgid ""
+"Image of the product variant (Medium-sized image of product template if "
+"false)."
+msgstr ""
+"Imagem da variante do produto (imagem de tamanho médio de modelo de produto "
+"se falso)."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_image_small
+msgid ""
+"Image of the product variant (Small-sized image of product template if "
+"false)."
+msgstr ""
+"Imagem da variante do produto (a imagem no tamanho pequeno do modelo do "
+"produto se falso)."
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_in_consultation
+msgid "In Consultation"
+msgstr "Em Consulta"
+
+#. module: medical
+#: selection:medical.appointment,appointment_type:0
+msgid "Inpatient"
+msgstr "Internado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_institution
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_institution
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_institution
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+msgid "Institution"
+msgstr "Instituição"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_insurance_company
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_insurance_company
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_insurance_company
+msgid "Insurance"
+msgstr "Seguro"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_is_insurance_plan
+#: model:ir.model.fields,field_description:medical.field_product_product_is_insurance_plan
+msgid "Insurance Plan"
+msgstr "Plano de Saúde"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_categ_id
+msgid "Internal Category"
+msgstr "Categoria Interna"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Internal ID"
+msgstr "ID Interna"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_identification_code
+msgid "Internal Identification"
+msgstr "Identificação Interna"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_code
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_default_code
+msgid "Internal Reference"
+msgstr "Referência Interna"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_barcode
+msgid "International Article Number used for product identification."
+msgstr "Número Internacional de Artigo usado para identificação do produto."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_is_follower
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_is_follower
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_is_follower
+msgid "Is Follower"
+msgstr "É Seguidor"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_company
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_company
+msgid "Is a Company"
+msgstr "É uma Companhia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_customer
+#: model:ir.model.fields,field_description:medical.field_medical_physician_customer
+msgid "Is a Customer"
+msgstr "É um Cliente"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_supplier
+#: model:ir.model.fields,field_description:medical.field_medical_physician_supplier
+msgid "Is a Vendor"
+msgstr "É um Vendedor"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_is_product_variant
+msgid "Is a product variant"
+msgstr "é uma variação do produto"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_function
+#: model:ir.model.fields,field_description:medical.field_medical_physician_function
+msgid "Job Position"
+msgstr "Cargo"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_lang
+#: model:ir.model.fields,field_description:medical.field_medical_physician_lang
+msgid "Language"
+msgstr "Língua"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_last_post
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_last_post
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_last_post
+msgid "Last Message Date"
+msgstr "Data da Última Mensagem"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_patient___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_physician___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard___last_update
+#: model:ir.model.fields,field_description:medical.field_medical_specialty___last_update
+msgid "Last Modified on"
+msgstr "Última Modificação"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_last_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_last_name
+#: model:ir.model.fields,field_description:medical.field_res_partner_last_name
+#: model:ir.model.fields,help:medical.field_medical_patient_last_name
+#: model:ir.model.fields,help:medical.field_medical_physician_last_name
+#: model:ir.model.fields,help:medical.field_res_partner_last_name
+msgid "Last Name"
+msgstr "Último Nome"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_patient_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_write_uid
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_patient_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_physician_write_date
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Legal ID"
+msgstr "ID Legal"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Legal Representative"
+msgstr "Representante Legal"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_packaging_ids
+msgid "Logistical Units"
+msgstr "Unidade Logística"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Mail"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_form
+msgid "Main"
+msgstr "Principal"
+
+#. module: medical
+#: selection:medical.patient,gender:0
+msgid "Male"
+msgstr "Homem"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_marital_status
+msgid "Marital status"
+msgstr "Estado Civil"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Married"
+msgstr "Casado"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_root
+#: model:ir.ui.view,arch_db:medical.view_res_partner_form
+msgid "Medical"
+msgstr "Médico"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_form
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_tree
+msgid "Medical Appointment"
+msgstr "Consulta Médica"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_assistant
+msgid "Medical Assistant"
+msgstr "Assistente Médico"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_medical_center_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_institution_id
+#: model:ir.model.fields,help:medical.field_medical_appointment_institution_id
+msgid "Medical Center"
+msgstr "Centro Médico"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_center_manager
+msgid "Medical Center Manager"
+msgstr "Gerente do Centro Médico"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_configurator
+msgid "Medical Configurator"
+msgstr "Configurador Médico"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_doctor
+msgid "Medical Doctor"
+msgstr "Doutor"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Medical Emergency"
+msgstr "Emergência"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_manager
+msgid "Medical Manager"
+msgstr "Gerente"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_patient
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_search
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_tree
+msgid "Medical Patient"
+msgstr "Paciente"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_tree
+msgid "Medical Physician"
+msgstr "Médico"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_form
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_search
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_tree
+msgid "Medical Specialty"
+msgstr "Especialidade"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_specialty_id
+msgid "Medical Specialty / Sector"
+msgstr "Especialidade/Setor"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_is_medical_supply
+#: model:ir.model.fields,field_description:medical.field_product_product_is_medical_supply
+msgid "Medical Supply"
+msgstr "Fornecimento"
+
+#. module: medical
+#: model:res.groups,name:medical.group_medical_user
+msgid "Medical User"
+msgstr "Usuário"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_image_medium
+#: model:ir.model.fields,field_description:medical.field_medical_physician_image_medium
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_image_medium
+msgid "Medium-sized image"
+msgstr "Imagem média"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_image_medium
+#: model:ir.model.fields,help:medical.field_medical_physician_image_medium
+msgid ""
+"Medium-sized image of this contact. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved. Use this field in form views "
+"or some kanban views."
+msgstr ""
+"Imagem de tamanho médio desse contato. Ele é automaticamente redimensionada "
+"como uma imagem de 128x128px, com relação de aspecto preservado. Utilize "
+"este campo na vista de formulário ou algumas vistas kanban."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_ids
+msgid "Messages"
+msgstr "Mensagem"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_end_minute
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_start_minute
+msgid "Minute"
+msgstr "Minuto"
+
+#. module: medical
+#: model:ir.ui.menu,name:medical.medical_root_misc
+msgid "Misc"
+msgstr "Variado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_mobile
+#: model:ir.model.fields,field_description:medical.field_medical_physician_mobile
+msgid "Mobile"
+msgstr "Móvel"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Mobile:"
+msgstr "Móvel:"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Monday"
+msgstr "Segunda-feira"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "More Info"
+msgstr "Mais Inf"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_name
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+msgid "Name"
+msgstr "Nome"
+
+#. module: medical
+#: sql_constraint:medical.specialty:0
+msgid "Name must be unique!"
+msgstr "Nome deve ser único"
+
+#. module: medical
+#: code:addons/medical/models/medical_patient.py:55
+#, python-format
+msgid "No DoB !"
+msgstr "Sem Aniversário!"
+
+#. module: medical
+#: code:addons/medical/models/medical_appointment.py:191
+#, python-format
+msgid "No default stage defined for review"
+msgstr "Sem estágio padrão definido para revisão"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_comment
+#: model:ir.model.fields,field_description:medical.field_medical_physician_comment
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_form
+msgid "Notes"
+msgstr "Notas"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_needaction_counter
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_needaction_counter
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Ações"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_message_needaction_counter
+#: model:ir.model.fields,help:medical.field_medical_physician_message_needaction_counter
+#: model:ir.model.fields,help:medical.field_medical_physician_services_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensagens que requer uma ação"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_message_unread_counter
+#: model:ir.model.fields,help:medical.field_medical_physician_message_unread_counter
+#: model:ir.model.fields,help:medical.field_medical_physician_services_message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensagens não lidas"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_opt_out
+#: model:ir.model.fields,field_description:medical.field_medical_physician_opt_out
+msgid "Opt-Out"
+msgstr ""
+
+#. module: medical
+#: selection:medical.appointment,appointment_type:0
+msgid "Outpatient"
+msgstr "Ambulatorial"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_parent_name
+#: model:ir.model.fields,field_description:medical.field_medical_physician_parent_name
+msgid "Parent name"
+msgstr "Nome dos pais"
+
+#. module: medical
+#: model:ir.model,name:medical.model_res_partner
+msgid "Partner"
+msgstr "Parceiro"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_partner_id
+msgid "Partner id"
+msgstr "Id do Parceiro"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_partner_id
+msgid "Partner related data of the physician"
+msgstr "dados de parceiro relacionado do médico"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_patient_action
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_patient_id
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_patient
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_patient
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_patient
+#: model:ir.ui.menu,name:medical.medical_patient_root
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_identification_code
+msgid ""
+"Patient Identifier provided by the Health Center.(different from the Social "
+"Security Number)"
+msgstr ""
+"Identificador paciente fornecido pelo Centro de Saúde. (Diferente do número "
+"de segurança social)"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_patient_id
+msgid "Patient Name"
+msgstr "Nome do Paciente"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_ref
+#: model:ir.model.fields,help:medical.field_medical_physician_ref
+msgid "Patient Social Security Number or equivalent"
+msgstr "Número de Segurança do Paciente social ou equivalente"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_in_review
+msgid "Pending Review"
+msgstr "Revisão Pendente"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_person
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_person
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_person
+msgid "Person"
+msgstr "Pessoa"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_pharmacy
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_pharmacy
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_pharmacy
+msgid "Pharmacy"
+msgstr "Farmacia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_phone
+#: model:ir.model.fields,field_description:medical.field_medical_physician_phone
+msgid "Phone"
+msgstr "Fone"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Phone:"
+msgstr "Fone:"
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_physician_action
+#: model:ir.actions.act_window,name:medical.medical_physician_action_self
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_physician_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_physician_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_physician_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_physician_id
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+msgid "Physician"
+msgstr "Médico"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_physician_id
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Physician's Name"
+msgstr "Nome do Médico"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_notify_email
+#: model:ir.model.fields,help:medical.field_medical_physician_notify_email
+msgid ""
+"Policy to receive emails for new messages pushed to your personal Inbox:\n"
+"- Never: no emails are sent\n"
+"- All Messages: for every notification you receive in your Inbox"
+msgstr ""
+"Política de receber e-mails para novas mensagens enviadas para sua caixa de "
+"entrada pessoal:\n"
+"- Nunca: sem e-mails são enviados\n"
+"- Todas as mensagens: para cada notificação que receber na sua caixa de "
+"entrada"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_price
+msgid "Price"
+msgstr "Preço"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_pricelist_id
+msgid "Pricelist"
+msgstr "Lista de Preços"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_item_ids
+msgid "Pricelist Items"
+msgstr "Itens da Lista de Preços"
+
+#. module: medical
+#: model:ir.model,name:medical.model_product_product
+msgid "Product"
+msgstr "Produtos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_attribute_line_ids
+msgid "Product Attributes"
+msgstr "Atributos do Produto"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_product_manager
+msgid "Product Manager"
+msgstr "Gerente do Produto"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_product_tmpl_id
+msgid "Product Template"
+msgstr "Modelo do Produto"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_type
+msgid "Product Type"
+msgstr "Tipo do Produto"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_product_id
+msgid "Product related information for Appointment Type"
+msgstr "informações sobre o produto para o tipo de consulta"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_product_variant_ids
+msgid "Products"
+msgstr "Produtos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_description_purchase
+msgid "Purchase Description"
+msgstr "Descrição da Compra"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_uom_po_id
+msgid "Purchase Unit of Measure"
+msgstr "Unidade de Medida da Compra"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_parent_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_parent_id
+msgid "Related Company"
+msgstr "Companhia Relacionada"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_partner_id
+msgid "Related Partner"
+msgstr "Parceiro Relacionado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_patient_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_patient_ids
+#: model:ir.model.fields,field_description:medical.field_res_partner_patient_ids
+msgid "Related Patients"
+msgstr "Paciente Relacionado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_product_id
+msgid "Related Product"
+msgstr "Produto Relacionado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_schedule_template_ids
+msgid "Related schedules"
+msgstr "Agendamento Relacionado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_relationship
+#: model:ir.model.fields,field_description:medical.field_medical_physician_relationship
+#: model:ir.model.fields,field_description:medical.field_res_partner_relationship
+msgid "Relationship"
+msgstr "Relação"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_requirements
+msgid "Requirements"
+msgstr "Requerimentos"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_user_id
+msgid "Responsible"
+msgstr "Responsável"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_description_sale
+msgid "Sale Description"
+msgstr "Descrição da Venda"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_list_price
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_lst_price
+msgid "Sale Price"
+msgstr "Preço de Venda"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_property_product_pricelist
+#: model:ir.model.fields,field_description:medical.field_medical_physician_property_product_pricelist
+msgid "Sale Pricelist"
+msgstr "Lista de Preços da Venda"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_user_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_user_id
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Saturday"
+msgstr "Sábado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_school
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_school
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_school
+msgid "School"
+msgstr "Escola"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_categ_id
+msgid "Select category for the current product"
+msgstr "Seleccione uma categoria para o produto atual"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_use_parent_address
+#: model:ir.model.fields,help:medical.field_medical_physician_use_parent_address
+msgid ""
+"Select this if you want to set company's address information  for this "
+"contact"
+msgstr ""
+"Selecione esta opção se você deseja definir as informações de endereço da "
+"empresa para este contato"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Separated"
+msgstr "Separado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_sequence
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_sequence
+msgid "Sequence"
+msgstr "Sequência"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_signup_expiration
+#: model:ir.model.fields,field_description:medical.field_medical_physician_signup_expiration
+msgid "Signup Expiration"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_signup_token
+#: model:ir.model.fields,field_description:medical.field_medical_physician_signup_token
+msgid "Signup Token"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_signup_type
+#: model:ir.model.fields,field_description:medical.field_medical_physician_signup_type
+msgid "Signup Token Type"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_signup_valid
+#: model:ir.model.fields,field_description:medical.field_medical_physician_signup_valid
+msgid "Signup Token is Valid"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_signup_url
+#: model:ir.model.fields,field_description:medical.field_medical_physician_signup_url
+msgid "Signup URL"
+msgstr ""
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Single"
+msgstr "Solteiro"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_image_small
+#: model:ir.model.fields,field_description:medical.field_medical_physician_image_small
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_image_small
+msgid "Small-sized image"
+msgstr "Imagem Pequena"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_image_small
+#: model:ir.model.fields,help:medical.field_medical_physician_image_small
+msgid ""
+"Small-sized image of this contact. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+"Imagem de tamanho pequeno deste contato. Ele é automaticamente "
+"redimensionada como uma imagem de 64x64px, com relação de aspecto "
+"preservado. Utilize este campo em qualquer lugar uma imagem pequena é "
+"necessária."
+
+#. module: medical
+#: model:ir.actions.act_window,name:medical.medical_specialty_action
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_specialty_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_specialty_id
+#: model:ir.model.fields,field_description:medical.field_medical_specialty_name
+#: model:ir.ui.view,arch_db:medical.medical_appointment_view_search
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_search
+#: model:ir.ui.view,arch_db:medical.medical_specialty_view_search
+msgid "Specialty"
+msgstr "Especialidade"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_specialty_id
+msgid "Specialty Code"
+msgstr "Código da Especialidade"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_sale_ok
+msgid "Specify if the product can be selected in a sales order line."
+msgstr ""
+"Especificar se o produto pode ser selecionado em uma linha de pedido de "
+"vendas."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_id_2576
+msgid "Stage"
+msgstr "Estágio"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_stage_name
+msgid "Stage Name"
+msgstr "Nome da Etapa"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment_stage
+msgid "Stage of Appointment"
+msgstr "Estágio da Consulta"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_unavailable_wizard_date_start
+msgid "Start"
+msgstr "Começo"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_state_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_state_id
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "State"
+msgstr "Estado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_state
+msgid "Status"
+msgstr "estado"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_street
+#: model:ir.model.fields,field_description:medical.field_medical_physician_street
+msgid "Street"
+msgstr "Rua"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "Street..."
+msgstr "Rua"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_street2
+#: model:ir.model.fields,field_description:medical.field_medical_physician_street2
+msgid "Street2"
+msgstr "Rua2"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Sunday"
+msgstr "Domingo"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_vat
+#: model:ir.model.fields,field_description:medical.field_medical_physician_vat
+msgid "TIN"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_category_id
+#: model:ir.model.fields,field_description:medical.field_medical_physician_category_id
+msgid "Tags"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "Tags..."
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_vat
+#: model:ir.model.fields,help:medical.field_medical_physician_vat
+msgid ""
+"Tax Identification Number. Fill it if the company is subjected to taxes. "
+"Used by the some of the legal statements."
+msgstr ""
+"Número de Identificação Fiscal. Encha-se a empresa está sujeita a impostos. "
+"Usado pela algumas das declarações legais."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_company_type
+#: model:ir.model.fields,help:medical.field_medical_physician_company_type
+msgid ""
+"Technical field, used only to display a boolean using a radio button. As for "
+"Odoo v9 RadioButton cannot be used on boolean fields, this one serves as "
+"interface. Due to the old API limitations with interface function field, we "
+"implement it by hand instead of a true function field. When migrating to the "
+"new API the code should be simplified. Changing thecompany_type of a company "
+"contact into a company will not displaythis contact as a company contact but "
+"as a standalone company."
+msgstr ""
+"Domínio técnico, usado apenas para exibir um booleano usando um botão de "
+"rádio. Quanto Openerp v9 RadioButton não pode ser usado em campos boolean, "
+"este serve como interface. Devido às velhas limitações da API com o campo "
+"função de interface, nós implementá-lo à mão em vez de um campo de função "
+"verdade. Ao migrar para a nova API do código deve ser simplificada. Mudando "
+"thecompany_type de um contato da empresa em uma empresa não vai displaythis "
+"contato como um contato da empresa, mas como uma empresa independente."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_name_template
+msgid "Template Name"
+msgstr "Nome do Modelo"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_user_id
+#: model:ir.model.fields,help:medical.field_medical_physician_user_id
+msgid ""
+"The internal user that is in charge of communicating with this contact if "
+"any."
+msgstr ""
+"O usuário interno que é responsável pela comunicação com este contato se "
+"houver."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_tz
+#: model:ir.model.fields,help:medical.field_medical_physician_tz
+msgid ""
+"The partner's timezone, used to output proper date and time values inside "
+"printed reports. It is important to set a value for this field. You should "
+"use the same timezone that is otherwise used to pick and render date and "
+"time values: your computer's timezone."
+msgstr ""
+"O fuso horário do parceiro, usado para a saída de data e hora adequada "
+"valores dentro relatórios impressos. É importante definir um valor para este "
+"campo. Você deve usar o mesmo fuso horário que é de outra maneira usado para "
+"escolher e processar data e hora valores: fuso horário do seu computador."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_volume
+msgid "The volume in m3."
+msgstr "O volume em m3."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_weight
+msgid "The weight of the contents in Kg, not including any packaging, etc."
+msgstr ""
+"O peso do conteúdo em kg, não incluindo qualquer tipo de embalagem, etc."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_image
+#: model:ir.model.fields,help:medical.field_medical_physician_image
+msgid ""
+"This field holds the image used as avatar for this contact, limited to "
+"1024x1024px"
+msgstr ""
+"Este campo contém a imagem usada como avatar para este contato, limitado a "
+"1024x1024px"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_image_variant
+msgid ""
+"This field holds the image used as image for the product variant, limited to "
+"1024x1024px."
+msgstr ""
+"Este campo contém a imagem usada como imagem para a variante do produto, "
+"limitada a 1024x1024px."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_physician_services_price_extra
+msgid "This is the sum of the extra price of all attributes"
+msgstr "Esta é a soma do preço adicional de todos os atributos"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_property_product_pricelist
+#: model:ir.model.fields,help:medical.field_medical_physician_property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr ""
+"Esta lista de preços será utilizado, em vez do padrão, para as vendas ao "
+"parceiro atual"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_stage_fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr ""
+"Esta etapa é dobrado na vista kanban quando não há registros em que estágio "
+"para exibir."
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Thursday"
+msgstr "Quinta-feira"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_tz
+#: model:ir.model.fields,field_description:medical.field_medical_physician_tz
+msgid "Timezone"
+msgstr "Fuso Horário"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_tz_offset
+#: model:ir.model.fields,field_description:medical.field_medical_physician_tz_offset
+msgid "Timezone offset"
+msgstr "Compensar Fuso Horário"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_title
+#: model:ir.model.fields,field_description:medical.field_medical_physician_title
+msgid "Title"
+msgstr "Título"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Tuesday"
+msgstr "Terça-feira"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_appointment_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_unavailable
+msgid "Unavailable"
+msgstr "Indisponível"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_uom_id
+msgid "Unit of Measure"
+msgstr "Unidade de medida"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_unread
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_unread
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_unread
+msgid "Unread Messages"
+msgstr "Mensagens não lidas"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_message_unread_counter
+#: model:ir.model.fields,field_description:medical.field_medical_physician_message_unread_counter
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de Mensagens Não Lidas"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_urgency
+msgid "Urgency Level"
+msgstr "Nível de Urgência"
+
+#. module: medical
+#: selection:medical.appointment,urgency:0
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_use_parent_address
+#: model:ir.model.fields,field_description:medical.field_medical_physician_use_parent_address
+msgid "Use Company Address"
+msgstr "Useo endereço da empresa."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_appointment_stage_sequence
+msgid "Used to order stages. Lower is better."
+msgstr "Usado para solicitar etapas. Menor é melhor."
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_type
+#: model:ir.model.fields,help:medical.field_medical_physician_type
+msgid ""
+"Used to select automatically the right address according to the context in "
+"sales and purchases documents."
+msgstr ""
+"Usado para selecionar automaticamente o endereço correto de acordo com o "
+"contexto em documentos de vendas e compras."
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_history_name
+msgid "User"
+msgstr "Usuário"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_user_ids
+#: model:ir.model.fields,field_description:medical.field_medical_physician_user_ids
+msgid "Users"
+msgstr "Usuários"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_is_vaccine
+#: model:ir.model.fields,field_description:medical.field_product_product_is_vaccine
+msgid "Vaccine"
+msgstr "Vacina"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_price_extra
+msgid "Variant Extra Price"
+msgstr "Variante preço extra"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_image_variant
+msgid "Variant Image"
+msgstr ""
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_seller_ids
+msgid "Vendor"
+msgstr "Fornecedor"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_volume
+msgid "Volume"
+msgstr "Volume"
+
+#. module: medical
+#: model:medical.appointment.stage,name:medical.stage_appointment_waiting
+msgid "Waiting"
+msgstr "Aguardando"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_physician_services_warranty
+msgid "Warranty"
+msgstr "Garantia"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_website
+#: model:ir.model.fields,field_description:medical.field_medical_physician_website
+msgid "Website"
+msgstr "Site"
+
+#. module: medical
+#: model:ir.model.fields,help:medical.field_medical_patient_website
+#: model:ir.model.fields,help:medical.field_medical_physician_website
+msgid "Website of Partner or Company"
+msgstr "Site do parceiro ou Empresa"
+
+#. module: medical
+#: selection:medical.physician.schedule.template,day:0
+msgid "Wednesday"
+msgstr "Quarta-feira"
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "Widowed"
+msgstr "Viúva"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_is_work
+#: model:ir.model.fields,field_description:medical.field_medical_physician_is_work
+#: model:ir.model.fields,field_description:medical.field_res_partner_is_work
+msgid "Work"
+msgstr "Trabalho"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "ZIP"
+msgstr "CEP"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_patient_zip
+#: model:ir.model.fields,field_description:medical.field_medical_physician_zip
+msgid "Zip"
+msgstr "CEP"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_unavailable_wizard_form
+msgid "_Apply"
+msgstr "_Aplicar"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_unavailable_wizard_form
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#. module: medical
+#: model:ir.model.fields,field_description:medical.field_medical_appointment_date_end
+msgid "do not display"
+msgstr "não são exibidos"
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "e.g. +32.81.81.37.00"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_physician_view_form
+msgid "e.g. +506 5555 5555"
+msgstr ""
+
+#. module: medical
+#: model:ir.ui.view,arch_db:medical.medical_patient_view_form
+msgid "e.g. www.openerp.com"
+msgstr ""
+
+#. module: medical
+#: selection:medical.patient,marital_status:0
+msgid "law marriage"
+msgstr "união estável"
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment
+msgid "medical.appointment"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_appointment_history
+msgid "medical.appointment.history"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician
+msgid "medical.physician"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician_schedule_template
+msgid "medical.physician.schedule.template"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_physician_services
+msgid "medical.physician.services"
+msgstr ""
+
+#. module: medical
+#: model:ir.model,name:medical.model_medical_specialty
+msgid "medical.specialty"
+msgstr ""

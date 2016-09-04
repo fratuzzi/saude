@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+  <!-- Public Body Parts -->
+  <record id="product_public_body_part_form_view" model="ir.ui.view">
+    <field name="name">product.public.body.part.form</field>
+    <field name="model">product.public.body.part</field>
+    <field name="arch" type="xml">
+      <form string="Public Body Parts">
+        <sheet>
+          <div class="oe_left">
+            <group>
+              <field name="name"/>
+              <field name="sequence" readonly="1"/>
+            </group>
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="product_public_body_part_tree_view" model="ir.ui.view">
+    <field name="name">product.public.body.part.tree</field>
+    <field name="model">product.public.body.part</field>
+    <field name="arch" type="xml">
+      <tree string="Product Body Parts">
+        <field name="sequence" widget="handle"/>
+        <field name="name" />
+      </tree>
+    </field>
+  </record>
+  <record id="product_public_body_part_action" model="ir.actions.act_window">
+    <field name="name">Product Body Parts</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">product.public.body.part</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" eval="False"/>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to define a Body parts.
+      </p><p>
+        Body Parts are used to browse your products through the
+        touchscreen interface.
+      </p>
+    </field>
+  </record>
+  <menuitem action="product_public_body_part_action" id="menu_product_body_part_category" parent="product.prod_config_main" sequence="11" />
+
+  <!-- product.template: public_body_parts_ids many2many field  -->
+  <record id="product_template_form_view_body_part" model="ir.ui.view">
+    <field name="name">product.template.product.website.form</field>
+    <field name="model">product.template</field>
+    <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+    <field name="arch" type="xml">
+      <field name="public_categ_ids" position="after">
+        <field name="public_body_parts_ids" widget="many2many_tags"/>
+      </field>
+    </field>
+  </record>
+
+</data>
+</openerp>
